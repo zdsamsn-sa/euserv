@@ -7,8 +7,8 @@ on:
       - 'euser_renew.py'
       - '.github/workflows/euserv_renew.yml'
   schedule:
-    - cron: '7 12 * * *'      # 北京时间晚上 20:07 (UTC+8)
-    - cron: '37 0 * * *'      # 北京时间早上 08:37 (UTC+8)
+    - cron: '7 12 4-8 * *'      # 每月4-8号北京时间晚上 20:07 (UTC+8)
+    - cron: '37 0 4-8 * *'      # 每月4-8号北京时间早上 08:37 (UTC+8)
   workflow_dispatch:
 
 permissions:
